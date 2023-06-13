@@ -10,15 +10,15 @@ export default function Counter({history,setHistory}){
     let [counted,setcounted] = useState(count)
 
     useEffect(()=>{
-       setHistory((preHis)=>[...preHis,"counter did mount"])
+       setHistory((preHis)=>[...preHis,"counter has mounted"])
        return()=>{
-        setHistory((preHis)=>[...preHis,"counter will Unmount"])
+        setHistory((preHis)=>[...preHis,"return funnction with 'counter will Unmount'"])
     }
     },[])
     useEffect(()=>{
         setHistory((preHis)=>[...preHis,"counter is changed"])
         return ()=>{
-            setHistory((preHis)=>[...preHis,"ran just before counter change or before Unmount"])
+            setHistory((preHis)=>[...preHis,"return function with 'counter change or before Unmount'"])
         }
         
     },[count])

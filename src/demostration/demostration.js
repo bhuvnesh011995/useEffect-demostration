@@ -6,8 +6,8 @@ import "./demostration.css"
 export default function Demostration({history}){
     
     let list = history.map((e,i)=>{
-        if(history.length>13){
-            if(i>history.length-13) return(
+        if(history.length>10){
+            if(i>history.length-10) return(
                 <h4>{e}</h4>
             )
         }
