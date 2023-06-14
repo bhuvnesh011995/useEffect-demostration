@@ -1,13 +1,33 @@
+
 .app{
   display: flex;
-  word-wrap: normal;
-  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
   align-items: center;
-  background-color: gray;
-  padding: 10%;
-  padding-top: 5%;
+  
 }
 .main{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 35%;
+}
+.history{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding-right: 5%;
+}
+.mountbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  flex-wrap: wrap;
+}
+.counter{
+  display: flex;
+  justify-content: center;
+  height: 50%
 }

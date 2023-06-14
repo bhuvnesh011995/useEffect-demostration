@@ -2,8 +2,17 @@
     font-size: 30px;
     font-weight: 600;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .button{
-    margin: 10px;
-    padding: 1%;
+    margin: 5px;
+    background-color: rgb(25, 204, 227);
+}
+.button_containor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

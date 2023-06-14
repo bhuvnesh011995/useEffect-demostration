@@ -26,12 +26,15 @@ export default function Counter({history,setHistory}){
     return(
         <div>
                  <div className="counter"> counter: {count} </div>
-            <button className="button"
+                 <div className="button_containor">
+                     <button className="button"
             onClick={()=>{setcount(count+1)}}
             >Incriment</button>
             <button className="button"
             onClick={()=>{count>0&& setcount(count-1)}}
             >Decriment</button>
+                 </div>
+           
         </div>
         
     )
