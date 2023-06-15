@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="app"
-    style={{backgroundColor:theme[`${!dark?"light":"dark"}`].background, color:theme[`${!dark?"light":"dark"}`].color}}
+    style={{backgroundColor:theme.background, color:theme.color}}
     >
       <div className="main">
         <div className="counter">

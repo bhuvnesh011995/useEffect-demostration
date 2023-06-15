@@ -10,7 +10,7 @@ const initialState ={
 
 let themeContext = createContext();
 
-const theme = {
+const themes = {
     dark: {
         background : "black",
         color: "white"
@@ -20,6 +20,7 @@ const theme = {
         color:"black"
     }
 }
+let theme = themes[initialState.theme]
 
 
 function ThemeProvider({children}){
@@ -32,6 +33,7 @@ function ThemeProvider({children}){
     
     function toggle(){
     localStorage.setItem("dark",JSON.stringify(!dark))
+    theme = dark?themes.light :themes.dark
     setDark(!dark)
 }
 
